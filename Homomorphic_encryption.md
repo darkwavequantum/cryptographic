@@ -8,3 +8,6 @@
 ```math_def
 \newcommand{\foo}{Foo}
 ```
+```math #yourmathlabel
+a + b = c
+```
