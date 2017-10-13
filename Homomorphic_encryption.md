@@ -3,7 +3,7 @@
 
 部分同态加密系统
 ### 无填充RSA 
-http://mathurl.com/ya9v4qeh.png
+![](images/table http://mathurl.com/ya9v4qeh.png?raw=true)
 
 ```math_def
 \newcommand{\foo}{Foo}
