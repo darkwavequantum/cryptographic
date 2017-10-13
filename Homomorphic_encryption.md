@@ -11,3 +11,5 @@
 ```math #yourmathlabel
 a + b = c
 ```
+
+_E = mc ^2^_
