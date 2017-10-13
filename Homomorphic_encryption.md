@@ -3,7 +3,7 @@
 
 部分同态加密系统
 ### 无填充RSA 
-\mathcal{E}(x_1) \cdot \mathcal{E}(x_2) = x_1^e x_2^e \;\bmod\; m = (x_1x_2)^e \;\bmod\; m = \mathcal{E}(x_1 \cdot x_2)
+http://mathurl.com/ya9v4qeh.png
 
 ```math_def
 \newcommand{\foo}{Foo}
