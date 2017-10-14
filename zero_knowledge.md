@@ -7,3 +7,14 @@ It must satisfy 3 conditions:
 
 # Non-interactive zero-knowledge proof
 No interaction is necessary between prover and verifier
+
+
+# Quadratic Span Programs
+Characterization of the NP complexity class. It's exten of span programs.
+
+# Terminalogy
+Sound: reasonable
+Soundness: Justifiability. Rightfulness
+Witness: prover of relevant  event
+succinctness: concision
+SNARKs: succinct non-interactive arguments of knowledge: 简洁的非交互性知识论证
