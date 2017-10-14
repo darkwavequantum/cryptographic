@@ -54,10 +54,12 @@ can turn f into a zkSNARK where only σ_1 and σ_2 are publicly known and (addre
 witness string. The zero-knowledge property now causes the verifier to be able to check that the
 prover knows some witness that turns the root hash from σ_1 to σ_2 in a way that does not violate
 any requirement on correct transactions, but she has no idea who sent how much money to whom.
+```
 The formal definition (still leaving out some details) of zero-knowledge is that there is a simulator
 that, having also produced the setup string, but does not know the secret witness, can interact with
 the verifier – but an outside observer is not able to distinguish this interaction from the interaction
 with the real prover.
+```
 
 ##### Succinctness, prover shift,  QSP(multiply of polynomials, target polynomial of degree d),  <br>
 common reference string(CRS), <br>
