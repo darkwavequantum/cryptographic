@@ -38,3 +38,5 @@ Prover send verifier E(x), E(y) and E(xy). the verifier check if E(x)E(y) equals
 Succinctness, prover shift,  QSP(multiply of polynomials, target polynomial of degree d),  <br>
 common reference string(CRS), <br>
 Witness: reduction function(any NP -> NPC, 3-SAT), <br>
+
+anew: again
