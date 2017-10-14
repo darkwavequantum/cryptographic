@@ -21,3 +21,15 @@ SNARKs: succinct non-interactive arguments of knowledge: 简洁的非交互性�
 
 #
 # Points
+Encoding: quadratic equation of polynomials: t(x)(h(x) = w(x)v(x), find the coefficient of the quadratic equation on both sides.
+Succinctness by random sampling, 
+homomorphic encoding/encryption:  Computing E(t(s)) with known E(s), not knowing s.
+Encryption can be taken as encoding.  
+
+Zero Knowledge: prover obfuscates the values E(t(s)), E(h(S)), E(w(s)), E(v(s)) by multiplying a random value k such that verifier does not the original encoded values: E(t(s)).
+checking t(s)h(s)=v(s)w(s) is equivalent to checking t(s)h(s)k=v(s)w(s)k for random secret k(non-zero). prover sends verifier the obfuscated values t(s)h(s)k, verifier can not infer the value of t(s)h(s).
+
+
+Succinctness, prover shift,  QSP(multiply of polynomials, target polynomial of degree d),  
+common reference string(CRS), 
+Witness: reduction function(any NP -> NPC, 3-SAT), 
