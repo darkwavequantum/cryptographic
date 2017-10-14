@@ -29,6 +29,11 @@ Encryption can be taken as encoding.
 Zero Knowledge: prover obfuscates the values E(t(s)), E(h(S)), E(w(s)), E(v(s)) by multiplying a random value k such that verifier does not the original encoded values: E(t(s)).
 checking t(s)h(s)=v(s)w(s) is equivalent to checking t(s)h(s)k=v(s)w(s)k for random secret k(non-zero). prover sends verifier the obfuscated values t(s)h(s)k, verifier can not infer the value of t(s)h(s).
 
+RSA for Zero-Knowledge proof
+E(x):= encryption value of x
+E(x)E(y) = E(xy)(mod n).
+Application: Prover knows x and y, now he want to convince the verifier that he knows X and Y without leaking them.
+Prover send verifier E(x), E(y) and E(xy). the verifier check if E(x)E(y) equals to E(xy) modulo N. N is the public key.
 
 Succinctness, prover shift,  QSP(multiply of polynomials, target polynomial of degree d),  
 common reference string(CRS), 
