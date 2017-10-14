@@ -36,7 +36,7 @@ Application: Prover knows x and y, now he want to convince the verifier that he 
 Prover send verifier E(x), E(y) and E(xy). the verifier check if E(x)E(y) equals to E(xy) modulo N. N is the public key.<br>
 
 ##### zkSNARKs
-of Knowledge: it is not possible for the prover to construct a proof/argument without knowing a certain so-called witness(address the prover want to spend, or transfer money from). <br>
+of Knowledge: it is **NOT** possible for the prover to construct a proof/argument without knowing a certain so-called witness(address the prover want to spend, or transfer money from). <br>
 About the Zero-knowledge of zkSNARKs: it requires during the interaction, the verifier does not know the witness string.
 
 
