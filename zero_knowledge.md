@@ -18,3 +18,6 @@ Soundness: Justifiability. Rightfulness
 Witness: prover of relevant  event
 succinctness: concision
 SNARKs: succinct non-interactive arguments of knowledge: 简洁的非交互性知识论证
+
+#
+# Points
