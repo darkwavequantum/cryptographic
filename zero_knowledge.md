@@ -37,8 +37,27 @@ Prover send verifier E(x), E(y) and E(xy). the verifier check if E(x)E(y) equals
 
 ##### zkSNARKs
 of Knowledge: it is **NOT** possible for the prover to construct a proof/argument without knowing a certain so-called witness(address the prover want to spend, or transfer money from). <br>
-About the Zero-knowledge of zkSNARKs: it requires during the interaction, the verifier does not know the witness string.
+About the Zero-knowledge of zkSNARKs: it requires during the interaction, the verifier does not know the witness string. <br>
 
+Transaction Example: <br>
+f(σ_1, σ_2, address_a, address_b, v_a, p_a, p_b, v_a)
+σ_1: root hash of account merkle trees(before transaction)<br>
+σ_2: root hash of account merkle trees(after transaction)<br>
+address_a: address of account a<br>
+address_b: address of account b<br>
+v_a: balance of a before transaction<br>
+Pa: merkle tree proof to test if balance of a >= v_a before transaction and hash to σ_1<br>
+Pb: merkle tree proof to test if balance of b >= v_a after transaction and hash to σ_2<br>
+
+It is relatively easy to verify the computation of f if all inputs are known. Because of that, we
+can turn f into a zkSNARK where only σ_1 and σ_2 are publicly known and (address_a, address_b, v_a, Pa , Pb, v) is the
+witness string. The zero-knowledge property now causes the verifier to be able to check that the
+prover knows some witness that turns the root hash from σ_1 to σ_2 in a way that does not violate
+any requirement on correct transactions, but she has no idea who sent how much money to whom.
+The formal definition (still leaving out some details) of zero-knowledge is that there is a simulator
+that, having also produced the setup string, but does not know the secret witness, can interact with
+the verifier – but an outside observer is not able to distinguish this interaction from the interaction
+with the real prover.
 
 ##### Succinctness, prover shift,  QSP(multiply of polynomials, target polynomial of degree d),  <br>
 common reference string(CRS), <br>
