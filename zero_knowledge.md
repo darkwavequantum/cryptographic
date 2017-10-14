@@ -21,21 +21,26 @@ SNARKs: succinct non-interactive arguments of knowledge: 简洁的非交互性�
 
 #
 # Points
-Encoding: quadratic equation of polynomials: t(x)(h(x) = w(x)v(x), find the coefficient of the quadratic equation on both sides.<br>
+##### Encoding: quadratic equation of polynomials: t(x)(h(x) = w(x)v(x), find the coefficient of the quadratic equation on both sides.<br>
 Succinctness by random sampling, <br>
 homomorphic encoding/encryption:  Computing E(t(s)) with known E(s), not knowing s.<br>
 Encryption can be taken as encoding.  <br>
 
-Zero Knowledge: prover obfuscates the values E(t(s)), E(h(S)), E(w(s)), E(v(s)) by multiplying a random value k such that verifier does not the original encoded values: E(t(s)).<br>
+##### Zero Knowledge: prover obfuscates the values E(t(s)), E(h(S)), E(w(s)), E(v(s)) by multiplying a random value k such that verifier does not the original encoded values: E(t(s)).<br>
 checking t(s)h(s)=v(s)w(s) is equivalent to checking t(s)h(s)k=v(s)w(s)k for random secret k(non-zero). prover sends verifier the obfuscated values t(s)h(s)k, verifier can not infer the value of t(s)h(s).<br>
 
-RSA for Zero-Knowledge proof<br>
+##### RSA for Zero-Knowledge proof<br>
 E(x):= encryption value of x<br>
 E(x)E(y) = E(xy)(mod n).<br>
 Application: Prover knows x and y, now he want to convince the verifier that he knows X and Y without leaking them.<br>
 Prover send verifier E(x), E(y) and E(xy). the verifier check if E(x)E(y) equals to E(xy) modulo N. N is the public key.<br>
 
-Succinctness, prover shift,  QSP(multiply of polynomials, target polynomial of degree d),  <br>
+##### zkSNARKs
+of Knowledge: it is not possible for the prover to construct a proof/argument without knowing a certain so-called witness(address the prover want to spend, or transfer money from). <br>
+About the Zero-knowledge of zkSNARKs: it requires during the interaction, the verifier does not know the witness string.
+
+
+##### Succinctness, prover shift,  QSP(multiply of polynomials, target polynomial of degree d),  <br>
 common reference string(CRS), <br>
 Witness: reduction function(any NP -> NPC, 3-SAT), <br>
 
